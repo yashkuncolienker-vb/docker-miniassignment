@@ -6,12 +6,10 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'buy':
-      const condition = state.incart.includes(action.payload);
       return {
-        incart: condition
-          ? [...state.incart]
-          : [...state.incart, action.payload],
-        count: condition ? state.count : state.count + 1,
+        //If item exists in cart cartMiddleware in store.js prevents increment of count and addition to incart
+        incart: [...state.incart, action.payload],
+        count: state.count + 1,
       };
     default:
       return state;
