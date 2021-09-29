@@ -28,6 +28,13 @@ nav button {
   margin-left: auto;
   align-self: center;
   position: fixed;
-  right: 10.1rem;
+  right: 10.7rem;
   top: 0.5rem;
+  background-color: blue;
+  color: white;
+}
+
+nav button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
 }
