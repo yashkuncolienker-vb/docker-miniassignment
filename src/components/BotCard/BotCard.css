@@ -7,50 +7,41 @@
   border-bottom: 1px solid #000;
   padding-bottom: 50px;
 }
-
 .findata-container {
   display: flex;
   flex-direction: row;
   align-self: center;
 }
-
 .findata-container > * {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .findata-container div:nth-child(2) {
   color: rgb(20, 255, 20);
 }
-
 .card .btn-container {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
 }
-
 p {
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 h4 {
   width: 7rem;
   font-size: 1.2rem;
 }
-
 h5 {
   color: gray;
   font-size: 1.1rem;
 }
-
 .btn-container button:nth-last-of-type(1) {
   margin-bottom: 4px;
   font-size: 1.1rem;
 }
-
 button {
   background-color: white;
   border: 1px solid blue;
@@ -64,4 +55,8 @@ button {
 button:hover {
   background-color: blue;
   color: white;
+}
+button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
 }

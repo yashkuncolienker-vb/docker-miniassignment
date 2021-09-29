@@ -3,6 +3,7 @@ import Bots from './pages/Bots/Bots';
 import Navbar from './components/Navbar/Navbar';
 import BotDetails from './pages/BotDetails/BotDetails';
 import NotFound from './components/NotFound/NotFound';
+import Cart from './components/Cart/Cart';
 import {
   BrowserRouter as Router,
   Redirect,
@@ -19,11 +20,14 @@ function App() {
           <Route exact path="/">
             <Redirect to="/bots" />
           </Route>
-          <Route path="/bots">
+          <Route exact path="/bots">
             <Bots />
           </Route>
           <Route path="/bots-details/:id">
             <BotDetails />
+          </Route>
+          <Route path="/bots/cart">
+            <Cart />
           </Route>
           <Route>
             <NotFound />
