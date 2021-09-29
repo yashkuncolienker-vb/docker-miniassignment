@@ -1,0 +1,15 @@
+.bot-details {
+  margin: 10rem;
+  padding: 25px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(243, 243, 243);
+  border-radius: 15px;
+}
+
+.thermometer {
+}
+
+.moderate-risk {
+}

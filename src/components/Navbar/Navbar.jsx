@@ -1,8 +1,13 @@
+import './Navbar.css';
+import { useSelector } from 'react-redux';
+
 const Navbar = () => {
+  const cart = useSelector((state) => state.cart);
   return (
-    <div>
-      <h1>Iam a navbar</h1>
-    </div>
+    <nav>
+      <h1>Dashboard</h1>
+      <h2>Cart - {cart.count}</h2>
+    </nav>
   );
 };
 

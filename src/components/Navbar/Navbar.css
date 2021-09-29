@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  border-bottom: 2px solid lightgray;
+  z-index: 0;
+  padding-left: 10rem;
+}
+nav > * {
+  margin: 0 0.8rem;
+}
+nav h1 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid black;
+  margin-bottom: -2px;
+  z-index: 1;
+  font-size: 2rem;
+}
+nav h2 {
+  font-weight: 500;
+  align-self: end;
+  margin-bottom: 5px;
+}
