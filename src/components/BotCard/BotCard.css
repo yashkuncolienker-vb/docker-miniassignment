@@ -33,6 +33,7 @@
 
 p {
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 h4 {
@@ -42,10 +43,12 @@ h4 {
 
 h5 {
   color: gray;
+  font-size: 1.1rem;
 }
 
 .btn-container button:nth-last-of-type(1) {
   margin-bottom: 4px;
+  font-size: 1.1rem;
 }
 
 button {

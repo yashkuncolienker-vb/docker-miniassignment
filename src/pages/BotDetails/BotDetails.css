@@ -1,15 +1,54 @@
 .bot-details {
   margin: 10rem;
   padding: 25px;
-  height: 150px;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   background-color: rgb(243, 243, 243);
   border-radius: 15px;
 }
-
-.thermometer {
+.bot-details button {
+  font-size: 1.1rem;
 }
-
-.moderate-risk {
+.thermometer {
+  background-color: white;
+  color: #43b3a3;
+  margin: 8px 10px;
+}
+.moderate-risk-container {
+  background-color: #43b3a3;
+  display: inline-flex;
+  background-color: white;
+}
+.moderate-risk-container h5 {
+  background-color: #43b3a3;
+  color: white;
+  padding: 15px;
+  align-self: center;
+}
+.moderate-risk-container + button {
+  height: 44px;
+  margin-left: 10px;
+  padding: 10px;
+}
+.details-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  width: 50%;
+}
+.details-text-container h4 {
+  font-size: 1.5rem;
+}
+.bot-details > *:not(:first-child) {
+  align-self: center;
+}
+.bot-details > div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bot-details > div:nth-of-type(3) p {
+  color: rgb(20, 255, 20);
 }

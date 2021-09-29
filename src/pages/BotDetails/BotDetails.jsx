@@ -13,19 +13,22 @@ const BotDetails = () => {
     <div className="bot-details">
       {details.length ? (
         <>
-          <div>
+          <div className="details-text-container">
             <h4>{details[0].bot}</h4>
             <h5>{details[0].description}</h5>
-            <div className="moderate-risk">
-              MODERATE RISK
-              <FontAwesomeIcon
-                icon={faThermometerHalf}
-                className="thermometer"
-              />
+            <div className="details-btn-container">
+              <div className="moderate-risk-container">
+                <h5>MODERATE RISK</h5>
+                <FontAwesomeIcon
+                  icon={faThermometerHalf}
+                  className="thermometer"
+                  size="2x"
+                />
+              </div>
+              <button onClick={() => dispatch({ type: 'buy', payload: id })}>
+                Buy
+              </button>
             </div>
-            <button onClick={() => dispatch({ type: 'buy', payload: id })}>
-              Buy
-            </button>
           </div>
           <div>
             <h5>Index Value</h5>
@@ -33,7 +36,7 @@ const BotDetails = () => {
           </div>
           <div>
             <h5>CAGR</h5>
-            <p>{details[0].cagr}</p>
+            <p>{details[0].cagr}%</p>
           </div>
         </>
       ) : (
