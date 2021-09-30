@@ -26,10 +26,7 @@ const BotDetails = () => {
                   size="2x"
                 />
               </div>
-              <CartButton id={id} />
-              {/* <button onClick={() => dispatch({ type: 'buy', payload: id })}>
-                Buy
-              </button> */}
+              <CartButton id={Number(id)} />
             </div>
           </div>
           <div>
