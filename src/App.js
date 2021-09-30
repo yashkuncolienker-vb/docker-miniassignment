@@ -1,7 +1,7 @@
 import './App.css';
-import Bots from './pages/Bots/Bots.jsx';
+import Bots from './pages/Bots/Bots';
 import Navbar from './components/Navbar/Navbar';
-import BotDetails from './pages/BotDetails/BotDetails.jsx';
+import BotDetails from './pages/BotDetails/BotDetails';
 import NotFound from './components/NotFound/NotFound';
 import Cart from './pages/Cart/Cart';
 import {
