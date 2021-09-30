@@ -19,7 +19,7 @@ const BotCard = ({ bot }) => {
         <Link to={`/bots-details/${bot.id}`}>
           <button>View Algo</button>
         </Link>
-        <CartButton id={bot.id} />
+        <CartButton id={bot.id.toString()} />
       </div>
     </div>
   );

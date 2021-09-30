@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './BotDetails.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +7,6 @@ import CartButton from '../../components/CartButton/CartButton';
 
 const BotDetails = () => {
   const { id } = useParams();
-  const dispatch = useDispatch();
   const bots = useSelector((state) => state.bots);
   const details = bots.filter((bot) => bot.id === Number(id));
   return (
@@ -26,7 +25,7 @@ const BotDetails = () => {
                   size="2x"
                 />
               </div>
-              <CartButton id={Number(id)} />
+              <CartButton id={id} />
             </div>
           </div>
           <div>

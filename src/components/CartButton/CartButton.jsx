@@ -5,10 +5,8 @@ const CartButton = ({ id }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const incart = cart.incart;
-  const elementInCart = incart.length && incart.includes(id);
-  const botsInCart_count = incart.filter((i) => {
-    return i === id;
-  }).length;
+  const elementInCart = Object.keys(incart).includes(id);
+  const botsInCart_count = incart[id];
 
   return (
     <div>
