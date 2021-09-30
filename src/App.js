@@ -3,7 +3,7 @@ import Bots from './pages/Bots/Bots';
 import Navbar from './components/Navbar/Navbar';
 import BotDetails from './pages/BotDetails/BotDetails';
 import NotFound from './components/NotFound/NotFound';
-import Cart from './components/Cart/Cart';
+import Cart from './pages/Cart/Cart';
 import {
   BrowserRouter as Router,
   Redirect,
