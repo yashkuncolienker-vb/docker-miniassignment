@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import './BotDetails.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThermometerHalf } from '@fortawesome/free-solid-svg-icons';
+import CartButton from '../../components/CartButton/CartButton';
 
 const BotDetails = () => {
   const { id } = useParams();
@@ -25,9 +26,10 @@ const BotDetails = () => {
                   size="2x"
                 />
               </div>
-              <button onClick={() => dispatch({ type: 'buy', payload: id })}>
+              <CartButton id={id} />
+              {/* <button onClick={() => dispatch({ type: 'buy', payload: id })}>
                 Buy
-              </button>
+              </button> */}
             </div>
           </div>
           <div>
