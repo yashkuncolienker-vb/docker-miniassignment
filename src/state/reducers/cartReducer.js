@@ -4,25 +4,29 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
+  const payload = action.payload;
+
   switch (action.type) {
     case 'addToCart':
-      const isInCart = Object.keys(state.incart).includes(action.payload);
-      const countInCart = isInCart ? state.incart[action.payload] + 1 : 1;
+      const isItemInCart = Object.keys(state.incart).includes(payload);
+      const itemCountInCart = isItemInCart ? state.incart[payload] + 1 : 1;
       return {
-        incart: { ...state.incart, [action.payload]: countInCart },
+        incart: { ...state.incart, [payload]: itemCountInCart },
         count: state.count + 1,
       };
+
     case 'dropFromCart':
       const newCart = {
         ...state.incart,
-        [action.payload]: state.incart[action.payload] - 1,
+        [payload]: state.incart[payload] - 1,
       };
-      const countIsZero = state.incart[action.payload] === 1;
-      countIsZero && delete newCart[action.payload];
+      const isLastItem = state.incart[payload] === 1;
+      isLastItem && delete newCart[payload];
       return {
         incart: { ...newCart },
         count: state.count - 1,
       };
+
     default:
       return state;
   }
