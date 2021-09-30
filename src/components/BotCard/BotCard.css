@@ -11,9 +11,9 @@
   display: flex;
   flex-direction: row;
   align-self: center;
+  gap: 20px;
 }
 .findata-container > * {
-  margin: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,5 +26,5 @@
   flex-direction: column;
   align-self: flex-end;
   align-items: flex-end;
-  gap: 8px;
+  gap: 5px;
 }

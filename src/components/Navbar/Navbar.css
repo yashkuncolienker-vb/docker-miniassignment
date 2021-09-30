@@ -1,17 +1,12 @@
 nav {
   display: flex;
-  justify-content: left;
-  padding-bottom: 0;
   border-bottom: 2px solid lightgray;
-  z-index: 0;
   padding: 0 10rem;
 }
 nav h1 {
-  font-weight: 400;
   padding: 1rem 0;
   border-bottom: 2px solid black;
   margin-bottom: -2px;
-  z-index: 1;
   font-size: 2rem;
 }
 nav h2 {
@@ -25,13 +20,20 @@ nav button {
   background-color: blue;
   color: white;
 }
-
 nav a {
   margin-left: auto;
   align-self: center;
 }
-
-nav button:active {
-  transform: scale(0.9);
-  transition: transform 0.1s;
+@media (max-width: 426px) {
+  html {
+    font-size: 15px;
+  }
+  nav h1 {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px 30px !important;
+  }
 }

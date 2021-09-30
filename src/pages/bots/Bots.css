@@ -3,3 +3,12 @@
   font-weight: 400;
   font-size: 1rem;
 }
+@media (max-width: 426px) {
+  .bot-container h2,
+  .findata-container {
+    display: none;
+  }
+  .bot-container > * {
+    margin: 30px;
+  }
+}

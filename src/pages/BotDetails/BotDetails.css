@@ -1,7 +1,6 @@
 .bot-details {
   margin: 10rem;
   padding: 25px;
-  height: 200px;
   display: flex;
   justify-content: space-between;
   background-color: rgb(243, 243, 243);
@@ -11,9 +10,8 @@
   font-size: 1.1rem;
 }
 .thermometer {
-  background-color: white;
   color: #43b3a3;
-  margin: 8px 10px;
+  margin: auto 10px;
 }
 .moderate-risk-container {
   background-color: #43b3a3;
@@ -24,7 +22,6 @@
   background-color: #43b3a3;
   color: white;
   padding: 15px;
-  align-self: center;
 }
 .moderate-risk-container + div {
   display: inline-block;
@@ -35,26 +32,27 @@
 }
 .details-btn-container {
   display: flex;
+  margin-top: 10px;
   align-items: center;
 }
 .details-btn-container .cart-btn-container {
   font-size: 1.5rem;
   width: 130px;
 }
+.details-btn-container .cart-btn-container div {
+  min-width: 36px;
+}
 .details-btn-container .cart-btn-container button {
-  max-height: 44px;
   height: 44px;
   width: 44px;
   font-size: 2rem;
 }
 .details-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   word-wrap: break-word;
   width: 50%;
 }
 .details-text-container h4 {
+  margin-bottom: 10px;
   font-size: 1.5rem;
 }
 .bot-details > *:not(:first-child) {
@@ -67,4 +65,29 @@
 }
 .bot-details > div:nth-of-type(3) p {
   color: rgb(20, 255, 20);
+}
+@media (max-width: 900px) {
+  .bot-details {
+    flex-direction: column;
+  }
+  .details-text-container {
+    width: 100%;
+    text-align: center;
+  }
+  .details-text-container h4 {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .details-btn-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bot-details > *:not(:first-child) {
+    margin: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .bot-details {
+    margin: 10px 20px !important;
+  }
 }

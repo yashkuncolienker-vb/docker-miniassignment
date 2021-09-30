@@ -25,7 +25,9 @@ const BotDetails = () => {
                   size="2x"
                 />
               </div>
-              <CartButton id={id} botname={details[0].bot} />
+              <div>
+                <CartButton id={id} botname={details[0].bot} />
+              </div>
             </div>
           </div>
           <div>

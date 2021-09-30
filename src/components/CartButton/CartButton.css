@@ -2,12 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75px;
+  width: 74px;
 }
 .cart-btn-container > button {
   font-weight: 700;
   font-size: 2rem;
-  max-height: 28px;
   padding: 0 5px;
   line-height: 1;
 }

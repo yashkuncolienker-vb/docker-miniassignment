@@ -8,16 +8,8 @@ const CartButton = ({ id, botname }) => {
   const botsInCart_count = incart[id];
 
   return (
-    <div>
-      {!elementInCart ? (
-        <button
-          onClick={() =>
-            dispatch({ type: 'addToCart', payload: { id, botname } })
-          }
-        >
-          Buy
-        </button>
-      ) : (
+    <>
+      {elementInCart ? (
         <div className="cart-btn-container">
           <button
             className="minus"
@@ -37,8 +29,16 @@ const CartButton = ({ id, botname }) => {
             +
           </button>
         </div>
+      ) : (
+        <button
+          onClick={() =>
+            dispatch({ type: 'addToCart', payload: { id, botname } })
+          }
+        >
+          Buy
+        </button>
       )}
-    </div>
+    </>
   );
 };
 

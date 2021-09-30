@@ -7,24 +7,24 @@
   gap: 1rem;
   border-radius: 15px;
 }
-.cart h1 {
+.cart h1,
+h5 {
   align-self: center;
 }
 .cart > div {
   display: flex;
   justify-content: space-between;
 }
-.cart > h5 {
-  font-size: 2rem;
-  align-self: center;
-}
 .cart > div > h5 {
-  display: inline-block;
   font-size: 2rem;
-}
-.cart > div > h5:nth-of-type(1) {
   color: black;
 }
 .cart a {
   margin-left: auto;
+}
+@media (max-width: 426px) {
+  .cart h1,
+  .cart h5 {
+    font-size: 1.5rem !important;
+  }
 }
