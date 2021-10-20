@@ -31,7 +31,7 @@ const reducer = (state = initialState, action) => {
       return {
         incart: { ...newCart },
         count: state.count - 1,
-        id_to_name: { ...state.id_to_name, ...new_id_to_name },
+        id_to_name: { ...new_id_to_name },
       };
 
     default:
